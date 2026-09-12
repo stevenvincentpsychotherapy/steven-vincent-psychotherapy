@@ -622,3 +622,44 @@ a { color: inherit; text-decoration: none; }
     padding-right: 12px !important;
   }
 }
+
+/* v18: keep mobile menu consultation CTA right-aligned while centering its label */
+@media (max-width: 760px) {
+  .nav .mobile-cta {
+    display: inline-flex !important;
+    width: auto !important;
+    max-width: 320px !important;
+    min-height: 52px !important;
+    align-self: flex-end !important;
+    margin: 10px 0 0 auto !important;
+    padding: 0 18px !important;
+    place-items: unset !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .nav .mobile-cta > span {
+    display: block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Keep the consultation buttons in page content centered. */
+  .center-cta {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .center-cta > .cta {
+    width: min(100%, 320px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
