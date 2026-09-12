@@ -794,3 +794,53 @@ a { color: inherit; text-decoration: none; }
     transform: translateX(8px) !important;
   }
 }
+
+
+/* v26: About + Therapy bottom CTAs match the mobile header consultation button exactly. */
+@media (max-width: 760px) {
+  .page-bottom-cta {
+    width: min(calc(100% - 52px), var(--max-width)) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .page-bottom-cta > .cta {
+    width: calc(100% - 160px) !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    min-height: 46px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 10px !important;
+    letter-spacing: .03em !important;
+    line-height: 1.15 !important;
+    white-space: normal !important;
+    box-sizing: border-box !important;
+  }
+
+  .page-bottom-cta > .cta > span {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    line-height: 1.15 !important;
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .page-bottom-cta > .cta {
+    width: calc(100% - 140px) !important;
+    min-height: 44px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    font-size: 9.5px !important;
+    letter-spacing: .02em !important;
+  }
+}
