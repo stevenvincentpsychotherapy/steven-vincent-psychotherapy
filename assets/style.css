@@ -535,3 +535,47 @@ a { color: inherit; text-decoration: none; }
     justify-content: center;
   }
 }
+
+
+/* v16: reliable mobile CTA text centering */
+@media (max-width: 760px) {
+  a.cta,
+  button.cta {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    white-space: normal !important;
+  }
+
+  a.cta > span,
+  button.cta > span {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    line-height: 1.25 !important;
+  }
+
+  .nav .mobile-cta {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .center-cta {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .center-cta > .cta {
+    width: min(100%, 340px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

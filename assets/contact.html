@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Steven Vincent Psychotherapy</title>
+  <meta name="description" content="Request a free psychotherapy consultation with Steven Vincent in Toronto or online across Ontario.">
+  <link rel="stylesheet" href="style.css?v=16">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="Steven Vincent Psychotherapy home">
+        <img src="assets/bird-logo-reference.png" alt="Two chickadees on a branch logo">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About Steven</a>
+        <a href="therapy.html" class="">Therapy</a>
+        <a href="fees.html" class="">Fees &amp; FAQ</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a class="cta mobile-cta" href="#consultation"><span>Request a Free Consultation</span></a>
+      </nav>
+      <a class="cta" href="#consultation"><span>Request a Free Consultation</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Contact</h1>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="consultation">
+    <div class="container contact-grid">
+      <div class="contact-intro">
+        <h2 class="section-title">Request a free consultation</h2>
+        <p class="lead">If you’re thinking about therapy, you’re welcome to get in touch. A free 15–30 minute consultation gives us a chance to briefly talk about what brings you to therapy, answer questions, and get a sense of whether working together might be a good fit.</p>
+
+        <div class="contact-note">
+          <h3>Prefer email?</h3>
+          <p>You can also contact me directly at <a href="mailto:steve@stevenvincent.ca">steve@stevenvincent.ca</a>.</p>
+        </div>
+
+        <p class="privacy-note">Please don’t include confidential, highly personal, or urgent clinical information in this form. This form is for consultation requests and general inquiries only.</p>
+
+        
+      </div>
+
+      <div class="form-card">
+        <form action="https://formspree.io/f/xyeyllew" method="POST">
+          <input type="hidden" name="_subject" value="New psychotherapy consultation request">
+
+          <div class="form-row">
+            <label for="name">First name</label>
+            <input id="name" name="name" type="text" autocomplete="given-name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone number <span>(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+
+          <fieldset class="form-row contact-method">
+            <legend>Preferred contact method</legend>
+            <label class="radio-line"><input type="radio" name="preferred_contact" value="Email" checked> Email</label>
+            <label class="radio-line"><input type="radio" name="preferred_contact" value="Phone"> Phone</label>
+          </fieldset>
+
+          <div class="form-row">
+            <label for="message">Anything you’d like me to know before I contact you? <span>(optional)</span></label>
+            <textarea id="message" name="message" rows="6"></textarea>
+          </div>
+
+          <button class="cta form-submit" type="submit">Send Request</button>
+          <p class="form-small">I’ll use the information you provide only to respond to your inquiry.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-image" role="img" aria-label="Forest staircase surrounded by green foliage">
+    <img src="assets/psychology-today-badge.png" alt="Verified by Psychology Today">
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
