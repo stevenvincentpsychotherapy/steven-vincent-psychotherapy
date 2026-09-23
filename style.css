@@ -296,9 +296,10 @@ footer{margin:0;padding:0}
   .hero::before{left:-38px;top:-10px;width:55vw;height:220px;opacity:.95}
   .hero::after{right:-38px;top:24px;width:30vw;height:170px;opacity:.58}
   .hero h1{font-size:48px}
-  .hero.home{min-height:300px}
-  .hero.home .hero-content{padding:150px 18px 26px}
-  .hero.home h1{font-size:clamp(44px,12vw,58px);line-height:1.02}
+  .hero.home{min-height:340px}
+  .hero.home::before{left:-24px;top:-18px;width:46vw;height:185px;opacity:.95}
+  .hero.home .hero-content{padding:192px 18px 28px}
+  .hero.home h1{font-size:clamp(40px,10.5vw,50px);line-height:1.01}
   .hero p{font-size:18px;margin-top:10px}
 
   .section,.section.compact{padding:48px 0}
@@ -318,7 +319,9 @@ footer{margin:0;padding:0}
 
 @media (max-width:430px){
   .header-cta{padding:0 10px;font-size:9.5px;letter-spacing:.045em}
-  .hero.home .hero-content{padding-top:145px}
-  .hero.home h1{font-size:46px}
+  .hero.home{min-height:350px}
+  .hero.home::before{left:-18px;top:-12px;width:43vw;height:170px}
+  .hero.home .hero-content{padding-top:205px}
+  .hero.home h1{font-size:42px;line-height:1.02}
   .hero h1{font-size:44px}
 }
