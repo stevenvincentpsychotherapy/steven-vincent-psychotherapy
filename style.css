@@ -309,6 +309,7 @@ footer{margin:0;padding:0}
   .home-profile img,.portrait{width:min(100%,430px);margin:0 auto}
   .about-layout .portrait{order:-1}
   .section-title{font-size:41px}
+  .home-intro .section-title,.home-profile .section-title{font-size:33px;line-height:1.12}
   .subhead{font-size:38px}
   .about-copy,.body-copy,.lead,.fees p{font-size:17px}
   .fees h2{font-size:37px}
@@ -323,5 +324,6 @@ footer{margin:0;padding:0}
   .hero.home::before{left:-18px;top:-12px;width:43vw;height:170px}
   .hero.home .hero-content{padding-top:205px}
   .hero.home h1{font-size:42px;line-height:1.02}
+  .home-intro .section-title,.home-profile .section-title{font-size:31px;line-height:1.12}
   .hero h1{font-size:44px}
 }
