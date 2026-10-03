@@ -385,3 +385,18 @@ footer{margin:0;padding:0}
   .hero:not(.home) .hero-content{padding:164px 14px 36px;}
   .hero:not(.home) h1{font-size:40px;}
 }
+
+/* v34: desktop homepage hero polish */
+@media (min-width:761px){
+  .hero.home .hero-content{
+    padding-left:20px;
+    padding-right:20px;
+    text-align:center;
+  }
+}
+
+/* Blend the right watercolor artwork into the cream hero background */
+.hero::after{
+  background-color:var(--cream);
+  background-blend-mode:multiply;
+}
