@@ -429,3 +429,38 @@ footer{margin:0;padding:0}
     object-position: center 38%;
   }
 }
+
+/* v39: mobile homepage portrait matches desktop proportions and tighter section spacing */
+@media (max-width: 760px) {
+  .home-intro-section {
+    padding-bottom: 18px;
+  }
+
+  .home-profile-section {
+    padding-top: 18px;
+  }
+
+  .home-profile img {
+    width: min(100%, 430px);
+    aspect-ratio: 5 / 6;
+    object-fit: cover;
+    object-position: center 38%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .home-intro-section {
+    padding-bottom: 16px;
+  }
+
+  .home-profile-section {
+    padding-top: 16px;
+  }
+
+  .home-profile img {
+    aspect-ratio: 5 / 6;
+    object-fit: cover;
+    object-position: center 38%;
+  }
+}
