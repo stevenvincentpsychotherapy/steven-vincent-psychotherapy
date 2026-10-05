@@ -419,3 +419,13 @@ footer{margin:0;padding:0}
     margin:16px auto 0;
   }
 }
+
+
+/* v38: Match the approved homepage mockup portrait proportions on desktop */
+@media (min-width: 761px) {
+  .home-profile img {
+    aspect-ratio: 5 / 6;
+    object-fit: cover;
+    object-position: center 38%;
+  }
+}
