@@ -96,21 +96,30 @@
   }
 }
 
-/* Mobile-only optical heading alignment (November 2026).
-   The shorter single-line page titles look larger than the two-line
-   homepage heading at identical measured size, so reduce them slightly.
-   Therapy's two section headings use the homepage hero's mobile scale. */
+/* Definitive mobile typography: identical computed title sizes across pages.
+   Reuse the homepage title sizing on every page hero and the two Therapy headings.
+   Contact form heading matches the homepage Welcome sizing. Desktop is untouched. */
 @media (max-width:810px) {
-  .hero:not(.hero-home) h1 {
-    font-size:clamp(31px,8.7vw,60px);
-    line-height:1.13;
-  }
+  .hero-home h1,
+  .hero:not(.hero-home) h1,
   .therapy-grid h2 {
     font-size:clamp(34px,9.5vw,66px);
     line-height:1.13;
   }
+  .welcome h2,
+  .contact-copy h2 {
+    font-size:clamp(30px,7.5vw,43px);
+    line-height:1.1;
+  }
 }
 @media (max-width:410px) {
-  .hero:not(.hero-home) h1 { font-size:clamp(29px,8.7vw,36px); }
-  .therapy-grid h2 { font-size:clamp(31px,9.5vw,39px); }
+  .hero-home h1,
+  .hero:not(.hero-home) h1,
+  .therapy-grid h2 {
+    font-size:clamp(31px,9.5vw,39px);
+  }
+  .welcome h2,
+  .contact-copy h2 {
+    font-size:clamp(27px,8.1vw,33px);
+  }
 }
