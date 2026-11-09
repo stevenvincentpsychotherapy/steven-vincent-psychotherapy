@@ -50,3 +50,19 @@
 @media (max-width:410px) {
   .welcome h2 { font-size:clamp(27px, 8.1vw, 33px); }
 }
+
+/* Keep the full About Me portrait visible when the desktop layout narrows.
+   On wide desktop, preserve the approved equal-height editorial treatment. */
+@media (min-width:811px) and (max-width:1240px) {
+  .about-grid { align-items:start; }
+  .about-grid .about-photo { position:static; align-self:start; }
+  .about-grid .about-photo img {
+    position:static;
+    inset:auto;
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    object-position:center center;
+  }
+}
