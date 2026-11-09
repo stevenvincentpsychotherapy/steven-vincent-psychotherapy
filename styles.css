@@ -66,3 +66,32 @@
     object-position:center center;
   }
 }
+
+/* Consistent heading hierarchy throughout the site.
+   Page hero titles match the homepage's Steven Vincent Psychotherapy heading.
+   The two Therapy section titles match the homepage's Welcome heading. */
+.hero:not(.hero-home) h1 {
+  font-size:clamp(52px,5.65vw,90px);
+  line-height:1.1;
+}
+.therapy-grid h2 {
+  font-size:clamp(47px,4.3vw,61px);
+  line-height:1.1;
+}
+@media (max-width:810px) {
+  .hero:not(.hero-home) h1 {
+    font-size:clamp(34px,9.5vw,66px);
+    line-height:1.13;
+  }
+  .therapy-grid h2 {
+    font-size:clamp(30px,7.5vw,43px);
+  }
+}
+@media (max-width:410px) {
+  .hero:not(.hero-home) h1 {
+    font-size:clamp(31px,9.5vw,39px);
+  }
+  .therapy-grid h2 {
+    font-size:clamp(27px,8.1vw,33px);
+  }
+}
