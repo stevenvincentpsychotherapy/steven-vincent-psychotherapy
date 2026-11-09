@@ -123,3 +123,19 @@
     font-size:clamp(27px,8.1vw,33px);
   }
 }
+
+/* Mobile-only visual-size correction, reinforced inside secondary page heads. */
+@media (max-width:810px) {
+  .hero:not(.hero-home) h1,
+  .therapy-grid h2 {
+    font-size:clamp(30px,8.2vw,54px)!important;
+    line-height:1.13!important;
+  }
+  .contact-copy h2 {
+    font-size:clamp(30px,7.5vw,43px)!important;
+    line-height:1.1!important;
+  }
+}
+@media (max-width:410px) {
+  .contact-copy h2 {font-size:clamp(27px,8.1vw,33px)!important}
+}
